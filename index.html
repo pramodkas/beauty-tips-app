@@ -1,31 +1,320 @@
 <!doctype html>
-<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Beauty Tips Pro</title>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Beauty Tips Pro - Hindi Beauty & Self Care Tips</title>
+<meta name="description" content="Beauty Tips Pro पर Skin Care, Hair Care, Makeup, Nails और Daily Self Care के आसान Hindi tips पढ़ें।">
+<meta name="keywords" content="beauty tips hindi, skin care tips, hair care tips, makeup tips, beauty routine">
+
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#fff7fb;color:#2b2030}header{background:#7b3158;color:#fff;padding:22px;text-align:center}main{max-width:850px;margin:auto;padding:18px}.hero,.card{background:#fff;border-radius:18px;padding:20px;margin:15px 0;box-shadow:0 7px 25px #00000010}.hero{text-align:center}.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.cats button{padding:14px;border:0;border-radius:12px;background:#f6dce9;cursor:pointer;font-weight:bold}.tip{border:1px solid #f0d4e1;border-radius:14px;padding:15px;margin:12px 0}.tip h3{margin-top:0}.premium{background:#7b3158;color:#fff;text-align:center}.premium a{display:inline-block;background:#fff;color:#7b3158;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:bold;margin-top:10px}.search{width:100%;padding:13px;border:1px solid #ddd;border-radius:10px;font-size:16px}@media(max-width:600px){.cats{grid-template-columns:1fr 1fr}}
-</style></head>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#fff7fb;
+  color:#302330;
+  line-height:1.7
+}
+header{
+  background:linear-gradient(135deg,#7b3158,#b94d7d);
+  color:white;
+  text-align:center;
+  padding:35px 18px
+}
+header h1{margin:0;font-size:34px}
+header p{margin:8px 0 0}
+nav{
+  background:white;
+  padding:12px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:5;
+  box-shadow:0 2px 10px #0001
+}
+nav a{
+  color:#7b3158;
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:bold;
+  font-size:14px
+}
+main{max-width:950px;margin:auto;padding:18px}
+.hero,.card{
+  background:white;
+  border-radius:18px;
+  padding:22px;
+  margin:18px 0;
+  box-shadow:0 7px 25px #0000000d
+}
+.hero{text-align:center}
+.hero h2{color:#7b3158}
+.search{
+  width:100%;
+  padding:14px;
+  border:1px solid #ddd;
+  border-radius:12px;
+  font-size:16px
+}
+.categories{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px
+}
+.categories button{
+  padding:14px;
+  border:0;
+  border-radius:12px;
+  background:#f6dce9;
+  color:#55233d;
+  cursor:pointer;
+  font-weight:bold
+}
+.categories button:hover{background:#edc3d6}
+.tip{
+  border:1px solid #f0d4e1;
+  border-radius:14px;
+  padding:18px;
+  margin:13px 0;
+  background:#fffafd
+}
+.tip h3{margin-top:0;color:#7b3158}
+.tag{
+  display:inline-block;
+  background:#f6dce9;
+  color:#7b3158;
+  padding:3px 9px;
+  border-radius:20px;
+  font-size:12px
+}
+.premium{
+  background:#7b3158;
+  color:white;
+  text-align:center
+}
+.premium a{
+  display:inline-block;
+  background:white;
+  color:#7b3158;
+  padding:12px 22px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold
+}
+.info h2{color:#7b3158}
+footer{
+  background:#302330;
+  color:white;
+  text-align:center;
+  padding:28px 15px;
+  margin-top:30px
+}
+footer a{color:white;margin:0 8px}
+@media(max-width:600px){
+  header h1{font-size:27px}
+  .categories{grid-template-columns:1fr 1fr}
+  nav a{display:inline-block;margin:5px}
+}
+</style>
+</head>
+
 <body>
-<header><h1>💄 Beauty Tips Pro</h1><p>Simple Hindi beauty & self-care tips</p></header>
+
+<header>
+<h1>💄 Beauty Tips Pro</h1>
+<p>आसान Hindi Beauty & Self-Care Tips</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#tips">Beauty Tips</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
 <main>
-<section class="hero"><h2>हर दिन एक नया Beauty Tip ✨</h2><input class="search" id="search" placeholder="Tip खोजें..."></section>
-<section class="card"><div class="cats">
-<button onclick="show('skin')">✨ Skin Care</button><button onclick="show('hair')">💇 Hair Care</button><button onclick="show('makeup')">💄 Makeup</button><button onclick="show('nails')">💅 Nails</button><button onclick="show('routine')">🌸 Routine</button><button onclick="show('all')">📚 All Tips</button>
-</div></section>
-<section class="card" id="tips"></section>
-<section class="card premium"><h2>⭐ Premium Beauty Guide</h2><p>30-day beauty routine, printable checklist और bonus tips.</p><a href="https://rzp.io/rzp/OYt08Ik" target="_blank">₹10 में Premium Guide</a></section>
+
+<section class="hero" id="home">
+<h2>✨ हर दिन अपने Beauty Routine को बेहतर बनाएं</h2>
+<p>Skin, Hair, Makeup और Self-Care से जुड़े आसान और practical tips पढ़ें।</p>
+<input class="search" id="search" placeholder="🔎 Beauty tip खोजें...">
+</section>
+
+<section class="card">
+<h2>📚 Category चुनें</h2>
+
+<div class="categories">
+<button onclick="show('all')">📚 सभी Tips</button>
+<button onclick="show('skin')">✨ Skin Care</button>
+<button onclick="show('hair')">💇 Hair Care</button>
+<button onclick="show('makeup')">💄 Makeup</button>
+<button onclick="show('nails')">💅 Nails</button>
+<button onclick="show('routine')">🌸 Daily Routine</button>
+</div>
+</section>
+
+<section class="card" id="tips">
+<h2>🌸 Beauty Tips</h2>
+<div id="tipList"></div>
+</section>
+
+<section class="card">
+<h2>⭐ Beauty Routine के Basic Rules</h2>
+<p>अच्छी skin और hair care के लिए केवल महंगे products जरूरी नहीं हैं। नियमित सफाई, पर्याप्त नींद, balanced diet, पानी और अपनी skin type के अनुसार सही products चुनना महत्वपूर्ण है।</p>
+<p>किसी नए cosmetic या skincare product को इस्तेमाल करने से पहले उसके label और instructions जरूर पढ़ें। irritation होने पर उसका इस्तेमाल रोक दें।</p>
+</section>
+
+<section class="card premium">
+<h2>⭐ Premium Beauty Guide</h2>
+<p>30-Day Beauty Routine, Printable Checklist और Bonus Beauty Tips.</p>
+<a href="https://rzp.io/rzp/OYt08Ik" target="_blank" rel="noopener">₹10 में Premium Guide</a>
+</section>
+
+<section class="card info" id="about">
+<h2>ℹ️ About Beauty Tips Pro</h2>
+<p>Beauty Tips Pro एक Hindi information website है जहां Skin Care, Hair Care, Makeup, Nails और Daily Self-Care से संबंधित आसान जानकारी साझा की जाती है।</p>
+<p>हमारा उद्देश्य beauty और self-care से जुड़ी सामान्य जानकारी को सरल भाषा में उपलब्ध कराना है।</p>
+</section>
+
+<section class="card info" id="contact">
+<h2>📩 Contact</h2>
+<p>Website से संबंधित किसी सुझाव, correction या feedback के लिए हमसे संपर्क करें।</p>
+<p>Email: <strong>pkashyap237@gmail.com</strong></p>
+</section>
+
 </main>
+
+<footer>
+<p>© 2026 Beauty Tips Pro. All Rights Reserved.</p>
+<p>
+<a href="#home">Home</a> |
+<a href="#about">About</a> |
+<a href="#contact">Contact</a>
+</p>
+</footer>
+
 <script>
-const data=[
-['skin','चेहरा साफ रखने की basic routine','सुबह और रात gentle cleanser से चेहरा साफ करें। त्वचा के अनुसार moisturizer और दिन में sunscreen इस्तेमाल करना उपयोगी है।'],
-['skin','Sunscreen Tip','बाहर जाने पर broad-spectrum sunscreen लगाएँ और लंबे समय तक बाहर रहने पर label के निर्देश के अनुसार दोबारा लगाएँ।'],
-['hair','Hair Care Tip','बालों को बहुत गर्म पानी से धोने से बचें और shampoo के बाद conditioner का इस्तेमाल करें।'],
-['hair','Heat Styling','Straightener या dryer की heat कम रखें और heat-protection product के label instructions follow करें।'],
-['makeup','Makeup Tip','Makeup लगाने से पहले साफ त्वचा और moisturizer से base तैयार करें।'],
-['makeup','Makeup Hygiene','Mascara, lipstick या brushes किसी के साथ share न करें और brushes नियमित रूप से साफ करें।'],
-['nails','Nail Care','नाखून साफ और सूखे रखें तथा cuticle को काटने के बजाय gently care करें।'],
-['routine','Daily Routine','नींद, पानी, balanced diet और regular skincare—इन basic habits को routine में रखें।'],
-['routine','Patch Test','नया cosmetic या skincare product पूरे चेहरे पर लगाने से पहले product instructions के अनुसार छोटा patch test करना बेहतर है।']
+
+const data = [
+
+["skin","चेहरा साफ करने का सही तरीका","सुबह और रात अपनी skin type के अनुसार gentle cleanser से चेहरा साफ करें। बहुत ज्यादा रगड़ने से बचें।"],
+["skin","Moisturizer क्यों जरूरी है","Moisturizer त्वचा की नमी बनाए रखने में मदद करता है। अपनी skin type के अनुसार product चुनें।"],
+["skin","Sunscreen Tip","दिन में बाहर जाते समय broad-spectrum sunscreen का इस्तेमाल करें और product label के अनुसार दोबारा लगाएं।"],
+["skin","Face को बार-बार न छुएं","गंदे हाथों से बार-बार चेहरा छूने से बचें और जरूरत पड़ने पर हाथ साफ करें।"],
+["skin","Face Towel साफ रखें","चेहरे के लिए इस्तेमाल होने वाला towel नियमित रूप से धोकर साफ रखें।"],
+["skin","Makeup हटाकर सोएं","रात को सोने से पहले makeup अच्छी तरह remove करें और फिर अपनी सामान्य skincare routine करें।"],
+["skin","Patch Test","नया skincare product इस्तेमाल करने से पहले उसके instructions के अनुसार छोटा patch test करना बेहतर है।"],
+["skin","बहुत गर्म पानी से बचें","बहुत गर्म पानी त्वचा को dry महसूस करा सकता है। चेहरा धोने के लिए सामान्य या हल्का गुनगुना पानी इस्तेमाल करें।"],
+["skin","Lip Care","होठों को dry होने से बचाने के लिए suitable lip balm का इस्तेमाल करें और उन्हें बार-बार न चाटें।"],
+["skin","Skin को over-scrub न करें","बहुत ज्यादा scrubbing करने से irritation हो सकती है। Product instructions का पालन करें।"],
+
+["hair","बालों को बहुत गर्म पानी से न धोएं","बहुत गर्म पानी बालों और scalp को dry महसूस करा सकता है। हल्के गुनगुने पानी का इस्तेमाल करें।"],
+["hair","Conditioner का इस्तेमाल","Shampoo के बाद बालों की length पर suitable conditioner इस्तेमाल करना बालों को manageable रखने में मदद कर सकता है।"],
+["hair","Wet Hair को धीरे संभालें","गीले बालों को जोर से न खींचें। Wide-tooth comb से धीरे-धीरे detangle करें।"],
+["hair","Heat Styling कम करें","Straightener और dryer की बहुत ज्यादा heat से बाल damage हो सकते हैं। Heat कम रखें।"],
+["hair","Hair Brush साफ रखें","Brush और comb को नियमित रूप से साफ करें ताकि उसमें जमा dirt और product buildup कम हो।"],
+["hair","बहुत tight hairstyle से बचें","लगातार बहुत tight ponytail या hairstyle करने से बालों पर unnecessary pulling हो सकती है।"],
+["hair","Scalp Hygiene","Scalp को साफ रखना जरूरी है। अपने hair type के अनुसार shampoo routine रखें।"],
+["hair","Hair Oil लगाने का तरीका","Hair oil लगाते समय scalp और बालों पर बहुत ज्यादा product लगाने की जरूरत नहीं होती।"],
+["hair","Split Ends","Split ends को पूरी तरह हटाने का practical तरीका trimming है। नियमित gentle hair care रखें।"],
+["hair","Hair Products का label पढ़ें","नया shampoo, serum या styling product इस्तेमाल करने से पहले उसके label और instructions पढ़ें।"],
+
+["makeup","Makeup से पहले तैयारी","Makeup से पहले साफ त्वचा और moisturizer से base तैयार करें।"],
+["makeup","Foundation सही shade का चुनें","Foundation चुनते समय अपनी skin tone के करीब shade चुनना natural look देने में मदद करता है।"],
+["makeup","Makeup Brushes साफ रखें","Makeup brushes को नियमित रूप से साफ करें ताकि उनमें product buildup कम हो।"],
+["makeup","Makeup Share न करें","Mascara, lipstick और अन्य personal makeup products किसी दूसरे व्यक्ति के साथ share न करें।"],
+["makeup","Mascara Hygiene","Mascara को बहुत लंबे समय तक इस्तेमाल न करें और product label की recommended period follow करें।"],
+["makeup","Natural Makeup Look","हल्का base, simple eye makeup और lip balm से clean everyday look बनाया जा सकता है।"],
+["makeup","Makeup Remove करें","दिन खत्म होने के बाद makeup को properly remove करके सामान्य skincare routine करें।"],
+["makeup","Lipstick से पहले Lip Care","Dry lips पर lipstick लगाने से पहले suitable lip balm इस्तेमाल करना useful हो सकता है।"],
+
+["nails","नाखून साफ रखें","नाखूनों को साफ और सूखा रखें तथा नियमित रूप से trim करें।"],
+["nails","Cuticle को न काटें","Cuticle को aggressively काटने के बजाय gently care करें।"],
+["nails","Nail Tools Share न करें","Nail cutter और अन्य personal tools को बिना साफ किए share करने से बचें।"],
+["nails","Nail Polish Break","लगातार nail polish लगाने के बजाय nails को clean रखने के दिन भी रखें।"],
+["nails","Nails को न चबाएं","नाखून चबाने की आदत से बचें और उन्हें उचित length में trim रखें।"],
+
+["routine","सुबह की Basic Routine","सुबह चेहरा साफ करें, moisturizer लगाएं और दिन में sunscreen का इस्तेमाल करें।"],
+["routine","रात की Routine","सोने से पहले makeup remove करें, चेहरा साफ करें और अपनी suitable skincare routine करें।"],
+["routine","पानी पीना","दिनभर पर्याप्त पानी पीने की आदत रखें। आपकी जरूरत मौसम, activity और शरीर की स्थिति के अनुसार बदल सकती है।"],
+["routine","नींद का ध्यान रखें","Regular और पर्याप्त नींद overall wellbeing और daily routine के लिए महत्वपूर्ण है।"],
+["routine","Balanced Diet","फल, सब्जियां, protein और अन्य balanced foods को अपनी diet में शामिल करें।"],
+["routine","Exercise","Regular physical activity overall health और wellbeing के लिए उपयोगी हो सकती है।"],
+["routine","Beauty Products Organize करें","अपने skincare और makeup products को साफ और व्यवस्थित जगह पर रखें।"],
+["routine","Expired Products इस्तेमाल न करें","किसी भी beauty product को इस्तेमाल करने से पहले expiry और product condition check करें।"],
+["routine","एक साथ बहुत products न बदलें","नई skincare routine शुरू करते समय एक साथ बहुत सारे नए products इस्तेमाल करने के बजाय धीरे-धीरे बदलाव करना आसान रहता है।"],
+["routine","अपनी Skin Type समझें","Oily, dry, combination या sensitive skin के अनुसार products चुनना अधिक practical हो सकता है।"],
+
+["skin","Oily Skin Care","Oily skin होने पर बहुत harsh products इस्तेमाल करने के बजाय gentle cleansing routine रखें।"],
+["skin","Dry Skin Care","Dry skin में gentle cleanser और suitable moisturizer routine में रखना मददगार हो सकता है।"],
+["hair","Dandruff की समस्या","Scalp में लगातार dandruff या irritation हो तो suitable anti-dandruff product के instructions follow करें और समस्या बनी रहे तो dermatologist से सलाह लें।"],
+["skin","Sensitive Skin","Sensitive skin में fragrance या नए active ingredients वाले products को सावधानी से introduce करें और irritation होने पर इस्तेमाल रोकें।"],
+["routine","Beauty में Consistency","किसी भी skincare routine का फायदा समझने के लिए नियमितता और product instructions का पालन जरूरी है।"]
+
 ];
-function show(cat='all',query=''){let arr=data.filter(x=>(cat==='all'||x[0]===cat)&&((x[1]+' '+x[2]).toLowerCase().includes(query.toLowerCase())));tips.innerHTML=arr.map(x=>`<div class="tip"><h3>${x[1]}</h3><p>${x[2]}</p></div>`).join('')||'<p>कोई tip नहीं मिला।</p>'}
-search.oninput=()=>show('all',search.value);show();
-</script></body></html>
+
+let currentCategory="all";
+
+function show(category="all",query=""){
+
+currentCategory=category;
+
+const q=query.toLowerCase().trim();
+
+const filtered=data.filter(item=>{
+
+const matchesCategory=category==="all" || item[0]===category;
+
+const text=(item[1]+" "+item[2]).toLowerCase();
+
+return matchesCategory && text.includes(q);
+
+});
+
+const list=document.getElementById("tipList");
+
+if(filtered.length===0){
+list.innerHTML="<p>कोई Beauty Tip नहीं मिला। दूसरा keyword try करें।</p>";
+return;
+}
+
+list.innerHTML=filtered.map(item=>`
+
+<article class="tip">
+<span class="tag">${categoryName(item[0])}</span>
+<h3>${item[1]}</h3>
+<p>${item[2]}</p>
+</article>
+
+`).join("");
+
+}
+
+function categoryName(cat){
+
+const names={
+skin:"Skin Care",
+hair:"Hair Care",
+makeup:"Makeup",
+nails:"Nails",
+routine:"Daily Routine"
+};
+
+return names[cat] || "Beauty Tip";
+
+}
+
+document.getElementById("search").addEventListener("input",function(){
+
+show(currentCategory,this.value);
+
+});
+
+show("all");
+
+</script>
+
+</body>
+</html>
