@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Beauty Tips Pro</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#fff7fb;color:#2b2030}header{background:#7b3158;color:#fff;padding:22px;text-align:center}main{max-width:850px;margin:auto;padding:18px}.hero,.card{background:#fff;border-radius:18px;padding:20px;margin:15px 0;box-shadow:0 7px 25px #00000010}.hero{text-align:center}.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.cats button{padding:14px;border:0;border-radius:12px;background:#f6dce9;cursor:pointer;font-weight:bold}.tip{border:1px solid #f0d4e1;border-radius:14px;padding:15px;margin:12px 0}.tip h3{margin-top:0}.premium{background:#7b3158;color:#fff;text-align:center}.premium a{display:inline-block;background:#fff;color:#7b3158;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:bold;margin-top:10px}.search{width:100%;padding:13px;border:1px solid #ddd;border-radius:10px;font-size:16px}@media(max-width:600px){.cats{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+<header><h1>💄 Beauty Tips Pro</h1><p>Simple Hindi beauty & self-care tips</p></header>
+<main>
+<section class="hero"><h2>हर दिन एक नया Beauty Tip ✨</h2><input class="search" id="search" placeholder="Tip खोजें..."></section>
+<section class="card"><div class="cats">
+<button onclick="show('skin')">✨ Skin Care</button><button onclick="show('hair')">💇 Hair Care</button><button onclick="show('makeup')">💄 Makeup</button><button onclick="show('nails')">💅 Nails</button><button onclick="show('routine')">🌸 Routine</button><button onclick="show('all')">📚 All Tips</button>
+</div></section>
+<section class="card" id="tips"></section>
+<section class="card premium"><h2>⭐ Premium Beauty Guide</h2><p>30-day beauty routine, printable checklist और bonus tips.</p><a href="https://rzp.io/rzp/OYt08Ik" target="_blank">₹10 में Premium Guide</a></section>
+</main>
+<script>
+const data=[
+['skin','चेहरा साफ रखने की basic routine','सुबह और रात gentle cleanser से चेहरा साफ करें। त्वचा के अनुसार moisturizer और दिन में sunscreen इस्तेमाल करना उपयोगी है।'],
+['skin','Sunscreen Tip','बाहर जाने पर broad-spectrum sunscreen लगाएँ और लंबे समय तक बाहर रहने पर label के निर्देश के अनुसार दोबारा लगाएँ।'],
+['hair','Hair Care Tip','बालों को बहुत गर्म पानी से धोने से बचें और shampoo के बाद conditioner का इस्तेमाल करें।'],
+['hair','Heat Styling','Straightener या dryer की heat कम रखें और heat-protection product के label instructions follow करें।'],
+['makeup','Makeup Tip','Makeup लगाने से पहले साफ त्वचा और moisturizer से base तैयार करें।'],
+['makeup','Makeup Hygiene','Mascara, lipstick या brushes किसी के साथ share न करें और brushes नियमित रूप से साफ करें।'],
+['nails','Nail Care','नाखून साफ और सूखे रखें तथा cuticle को काटने के बजाय gently care करें।'],
+['routine','Daily Routine','नींद, पानी, balanced diet और regular skincare—इन basic habits को routine में रखें।'],
+['routine','Patch Test','नया cosmetic या skincare product पूरे चेहरे पर लगाने से पहले product instructions के अनुसार छोटा patch test करना बेहतर है।']
+];
+function show(cat='all',query=''){let arr=data.filter(x=>(cat==='all'||x[0]===cat)&&((x[1]+' '+x[2]).toLowerCase().includes(query.toLowerCase())));tips.innerHTML=arr.map(x=>`<div class="tip"><h3>${x[1]}</h3><p>${x[2]}</p></div>`).join('')||'<p>कोई tip नहीं मिला।</p>'}
+search.oninput=()=>show('all',search.value);show();
+</script></body></html>
