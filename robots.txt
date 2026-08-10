@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pramodkas.github.io/beauty-tips-app/sitemap.xml
