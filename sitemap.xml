@@ -12,5 +12,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+  <loc>https://pramodkas.github.io/beauty-tips-app/glow-skin-care.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
 
 </urlset>
